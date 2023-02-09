@@ -2,14 +2,14 @@
 
 namespace CalculatorUnitTests
 {
-    public class UnitTests
+    internal class Homework1
     {
         [Test]
-        public void Sum1And1()
+        public void CheckReminder995DividedBy3()
         {
-            int expectedResult = 2;
+            int expectedResult = 0;
 
-            int actualResult = Calculator.Calculator.Sum(1, 1);
+            int actualResult = 995 % 3;
 
             Assert.AreEqual(expectedResult, actualResult);
         }

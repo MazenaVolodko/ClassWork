@@ -13,6 +13,7 @@ namespace UnitsTests
 
             Assert.AreEqual(expectedResult, actualResult);
         }
+
         [Test]
         public void Sum2And2() 
         {

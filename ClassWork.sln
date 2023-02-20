@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsTests", "CalculatorUni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTestsWithoutPOM", "SeleniumTestsWithoutPOM\SeleniumTestsWithoutPOM.csproj", "{E27C6E33-253A-4AB9-A1F1-0658C1D45EEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework2", "Homework2\Homework2.csproj", "{52E66BB0-9C99-4E01-8CAF-7C03747C5E5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E27C6E33-253A-4AB9-A1F1-0658C1D45EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E27C6E33-253A-4AB9-A1F1-0658C1D45EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E27C6E33-253A-4AB9-A1F1-0658C1D45EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E66BB0-9C99-4E01-8CAF-7C03747C5E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E66BB0-9C99-4E01-8CAF-7C03747C5E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E66BB0-9C99-4E01-8CAF-7C03747C5E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E66BB0-9C99-4E01-8CAF-7C03747C5E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

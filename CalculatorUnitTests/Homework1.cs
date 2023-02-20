@@ -5,8 +5,6 @@ namespace CalculatorUnitTests
 {
     internal class Homework1
     {
-
-       
         [Test]
         public void CheckReminder995DividedBy3()
         {

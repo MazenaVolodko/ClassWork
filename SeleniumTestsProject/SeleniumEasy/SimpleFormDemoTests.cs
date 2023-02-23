@@ -3,7 +3,7 @@ using NUnit.Framework;
 using SeleniumFrameworkProject;
 using SeleniumFrameworkProject.Pages.SeleniumEasy;
 
-namespace SeleniumTestsProject.SeleniumEasy
+namespace SeleniumTestsProject
 {
     internal class SimpleFormDemoTests
     {

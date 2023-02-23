@@ -7,12 +7,16 @@ namespace SeleniumTestsProject
 {
     internal class SimpleFormDemoTests
     {
+        [SetUp]
+        public void Setup()
+        {
+            Driver.SetupDriver();
+            SimpleFormDemo.Open();
+        }
+
         [Test]
         public void SingleInputField()  
         {
-            Driver.SetupDriver();
-            Driver.OpenUrl("https://demo.seleniumeasy.com/basic-first-form-demo.html");
-
             string expectedResult = "Labas";
 
             SimpleFormDemo.EnterMessage(expectedResult);
@@ -20,16 +24,11 @@ namespace SeleniumTestsProject
             string actualResult = SimpleFormDemo.GetSingleInputFieldMessage();
 
             Assert.AreEqual(expectedResult, actualResult);
-
-            Driver.CloseDriver();
         }
 
         [Test]
         public void TwoInputField()
         {
-            Driver.SetupDriver();
-            Driver.OpenUrl("https://demo.seleniumeasy.com/basic-first-form-demo.html");
-
             string inputAValue = "5";
             string inputBValue = "7";
             string expectedResult = "12";
@@ -40,7 +39,11 @@ namespace SeleniumTestsProject
             string actualResult = SimpleFormDemo.GetTwoInputFieldsMessage();
 
             Assert.AreEqual(expectedResult, actualResult);
+        }
 
+        [TearDown]
+        public void TearDown() 
+        {
             Driver.CloseDriver();
         }
     }

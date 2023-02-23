@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Extensions;
+using System;
 
 namespace SeleniumFrameworkProject.Pages
 {
@@ -17,6 +19,12 @@ namespace SeleniumFrameworkProject.Pages
         internal static string GetElementText(string locator)
         {
             return GetElement(locator).Text;
+        }
+
+        internal static void ScrollBy(int x, int y)
+        {
+            Driver.GetDriver().ExecuteJavaScript($"window.scrollBy({x}, {y})");
+
         }
 
         internal static void SendKeys(string locator, string message)

@@ -25,5 +25,28 @@ namespace SeleniumFrameworkProject.Pages.SeleniumEasy
 
         }
 
+        public static void EnterInputA(string inputAValue)
+        {
+            string locator = "//*[@id=\"sum1\"]";
+            Common.SendKeys(locator, inputAValue);
+        }
+
+        public static void EnterInputB(string inputBValue)
+        {
+            string locator = "//*[@id=\"sum2\"]";
+            Common.SendKeys(locator, inputBValue);
+        }
+
+        public static void ClickGetTotalButton()
+        {
+            string locator = "//*[@id=\"gettotal\"]/button";
+            Common.ClickElement(locator);
+        }
+
+        public static string GetTwoInputFieldsMessage()
+        {
+            string locator = "//*[@id=\"displayvalue\"]";
+            return Common.GetElementText(locator);
+        }
     }
 }
